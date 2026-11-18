@@ -494,8 +494,6 @@ void resetRect(Rectangle_W *rect) {
 	rect->color = GET_GRAY(0, 255);
 
 	rect->rect = GETRECTANGLE(0, 0, 0, 0);
-
-	OpenURL("https://google.com");
 }
 
 void initTriangles() {
