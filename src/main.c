@@ -11,6 +11,7 @@ GlobalState globalState = {
 		(float)H/2,
 	},
 	.cursor = {0},
+	.screenSize = GETVECTOR2(W, H),
 	.mouseCursor = MOUSE_CURSOR_ARROW,
 	.FPS = STARTING_FPS,
 	.deltaTime = 0,
@@ -84,7 +85,7 @@ int main() {
 	initTriangles();
 	initCircles();
 
-	InitWindow(W, H, "Welcome to Platformer");
+	InitWindow(globalState.screenSize.x, globalState.screenSize.y, "Welcome to Platformer");
 	SetTargetFPS(globalState.FPS);
 
 
